@@ -7,7 +7,7 @@ I bring food and facts to the server.
 ``.status``, ``.commands``
 
 **Rating**
-``.simprate``, ``.howmad``, ``.how *insert word*``, ``. *insert word* rate``
+``.how *insert word*``, ``. *insert word* rate``
 
 For the .how and .rate commands, you can @ a user afterwards.
 
