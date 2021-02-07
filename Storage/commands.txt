@@ -9,7 +9,7 @@ I bring food and facts to the server.
 **Rating**
 ``.how *insert word*``, ``. *insert word* rate``
 
-For the .how and .rate commands, you can @ a user afterwards.
+For the .how and .rate commands, a user can be pinged afterwards.
 
 
 **Other**
