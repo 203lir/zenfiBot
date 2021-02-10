@@ -1,4 +1,4 @@
-const { Client, MessageAttachment } = require('discord.js');
+﻿const { Client, MessageAttachment } = require('discord.js');
 
 const client = new Client();
 
@@ -19,16 +19,6 @@ const zenfiEmbed = {
   title: 'Zenfi Commands',
   description: commandsList,
   timestamp: new Date(),
-};
-
-const simpEmbed = {
-    title: 'simp rate',
-    timestamp: new Date(),
-};
-
-const madEmbed = {
-    title: 'mad rate',
-    timestamp: new Date(),
 };
 
 const rateEmbed = {
@@ -103,7 +93,7 @@ client.on('message', message => {
           else if (message.content.slice(l-4, l) === 'rate') {
           rateEmbed.title = message.content.slice(1,l-4) + " rate"
           rateEmbed.color = 'FF2BDF';
-          rateEmbed.description = "You are " + Math.floor(Math.random() * (101)).toString() + "% " + message.content.slice(1,l-4);
+          rateEmbed.description = `${message.author}` + " is " + Math.floor(Math.random() * (101)).toString() + "% " + message.content.slice(1,l-4);
           message.channel.send({embed: rateEmbed})
           }
           else if (message.content.slice(1, 4) === 'how') {
@@ -117,7 +107,7 @@ client.on('message', message => {
           } else {
               rateEmbed.title = message.content.slice(4, l) + " rate"
               rateEmbed.color = 'FF2BDF';
-              rateEmbed.description = "You are " + Math.floor(Math.random() * (101)).toString() + "% " + message.content.slice(4, l);
+              rateEmbed.description = `${message.author}` + " is " + Math.floor(Math.random() * (101)).toString() + "% " + message.content.slice(4, l);
               message.channel.send({embed: rateEmbed})
           }
           }
